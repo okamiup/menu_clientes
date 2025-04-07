@@ -5,7 +5,7 @@ int main ()
     // Variaveis de opcoes para o Menu
     int Pratos_principais = 1, Bebidas = 2, Sobremesas = 3, Sair = 4;
     
-    while (escolha != 4)
+    while (escolha < 1 || escolha > 4)
     /* Implementacao de um sistema para validar o input do cliente*/
     {
         printf("\nEscolha uma opcao do menu abaixo:\n ");
