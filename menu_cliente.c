@@ -5,11 +5,11 @@ int main ()
     // Variaveis de opcoes para o Menu
     int Pratos_principais = 1, Bebidas = 2, Sobremesas = 3, Sair = 4;
     
-    while (escolha < 1 || escolha > 4)
+    while (escolha != 4)
     /* Implementacao de um sistema para validar o input do cliente*/
     {
         printf("\nEscolha uma opcao do menu abaixo:\n ");
-        printf("\n1 - Pratos principais\n2 - Bebidas\n3 - Sobremesas\n4 - sair\n");
+        printf("\n1 - Pratos principais\n2 - Bebidas\n3 - Sobremesas\n4 - Sair\n");
         printf("\nSua escolha: ");
     
     if (scanf("%d", &escolha) != 1) {
@@ -41,7 +41,7 @@ int main ()
         break;
     
     case 4: 
-        printf("Deseja voltar para o menu?"); printf("\nPressione Enter para sair. ");
+        printf("\nPressione Enter para sair. ");
         while (getchar() != '\n');
         getchar (); break; /*Esse seria o menu principal para
         login do restaurante ou cliente, ainda nao foi desenvolvido.*/
